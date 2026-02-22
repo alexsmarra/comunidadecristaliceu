@@ -1,0 +1,8 @@
+// O truque das "URLs Limpas" na Vercel
+// A Vercel tem uma função chamada Clean URLs. Ela faz algo muito elegante: ela permite que o usuário acesse seusite.com/sobre (sem o .html no final), mas mostra o conteúdo do arquivo sobre.html.
+
+// Isso deixa seu site com cara de "site profissional moderno".
+
+{
+  "cleanUrls": true
+}

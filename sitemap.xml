@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://alexsmarra.github.io/Liceu/</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://comunidadecristaliceu.vercel.app/</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://alexsmarra.github.io/Liceu/sobre.html</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://comunidadecristaliceu.vercel.app/sobre.html</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://alexsmarra.github.io/Liceu/horarios.html</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://comunidadecristaliceu.vercel.app/horarios.html</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://alexsmarra.github.io/Liceu/aulas-online.html</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://comunidadecristaliceu.vercel.app/aulas-online.html</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://alexsmarra.github.io/Liceu/contato.html</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://comunidadecristaliceu.vercel.app/contato.html</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
