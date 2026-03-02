@@ -14,7 +14,7 @@ async function loadPartials() {
     document.getElementById("site-footer").innerHTML = footerHtml;
 
     const yearSpan = document.getElementById("year");
-    if (yearSpan) {
+    if (yearSpan) 
       yearSpan.textContent = new Date().getFullYear();
 
     initHeaderMenu();
