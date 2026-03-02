@@ -28,16 +28,17 @@ main.fill-screen .page-content {
     gap: 1rem;
 }
 
+.contato-cards .contato-card-aulas-online {
+    display: flex;
+    gap: .5rem;
+}
+
 .page-content .social-icons {
     gap: 1rem;
 }
 
 .page-content .social-icons p {
     margin-bottom: 0;
-}
-
-.page-content h2 {
-    /* text-align: center; */
 }
 
 .page-content p {

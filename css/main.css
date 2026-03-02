@@ -83,7 +83,7 @@ a {
 
 .pages-section h2 {
   position: relative;
-  padding-bottom: .5rem;
+  padding-bottom: 1rem;
   text-align: center;
   width: fit-content;
 }
@@ -100,7 +100,8 @@ a {
   margin: -3px auto 0 auto;
 }
 
-.pages-section .contato-card a .icon-svg {
+.pages-section .contato-card a .icon-svg,
+.pages-section .contato-card-aulas-online a .icon-svg {
   width: 2rem;
   height: 2rem;
   vertical-align: middle;
@@ -110,7 +111,8 @@ a {
   cursor: pointer;
 }
 
-.pages-section .contato-card a:hover .icon-svg {
+.pages-section .contato-card a:hover .icon-svg,
+.pages-section .contato-card-aulas-online a:hover .icon-svg {
   filter: brightness(1.3);
   transform: scale(1.15);
   transition: filter 0.2s, transform 0.2s, color 0.2s;
