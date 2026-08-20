@@ -84,6 +84,84 @@ main.fill-screen .page-content {
     text-align: left;   
 }
 
+/* ==========================================================================
+   Página: Aulas Online (Embeds de Vídeo e Layout)
+   ========================================================================== */
 
- 
- 
+/* Estrutura e alinhamento dos cards */
+.contato-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.contato-card-aulas-online {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centralização vertical perfeita no banner do canal */
+.contato-card-aulas-online.channel-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato-card-aulas-online.channel-banner p {
+    margin: 0;
+}
+
+.contato-card-aulas-online.channel-banner a {
+    display: flex;
+    align-items: center;
+}
+
+/* Ícone do YouTube com cores originais presas */
+.youtube-brand-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    fill: initial !important; /* Impede a herança do CSS global */
+}
+
+/* Padronização do bloco de vídeo */
+.video-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Título "Lives" centralizado */
+.video-block .video-block-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: inherit;
+}
+
+.video-block p {
+    margin-bottom: 1rem;
+}
+
+/* Container responsivo 16:9 para o iframe */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

@@ -8,14 +8,26 @@
     <meta name="description"
         content="A Comunidade Cristã Liceu é uma igreja protestante em Belo Horizonte dedicada ao estudo da Palavra de Deus, cultos, leituras de livros clássicos.">
 
-    <title>Comunidade Cristã Liceu</title>
+    <title>Aulas Online - Comunidade Cristã Liceu</title>
     <!-- Open Graph -->
-    <meta property="og:title" content="Comunidade Cristã Liceu">
+    <meta property="og:title" content="Aulas Online - Comunidade Cristã Liceu">
     <meta property="og:description"
-        content="A Comunidade Cristã Liceu é uma igreja em Belo Horizonte dedicada ao estudo da Palavra de Deus, cultos, cursos bíblicos e leituras de livros clássicos.">
+        content="Acompanhe nossas transmissões, cultos de 2026 e lives de estudos bíblicos online.">
     <meta property="og:image" content="https://comunidadecristaliceu.vercel.app/images/logos/logo-main.jpg">
     <meta property="og:url" content="https://comunidadecristaliceu.vercel.app/aulas-online.html">
     <meta property="og:type" content="website">
+
+    <!-- JSON-LD para Nome do Site -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Comunidade Cristã Liceu",
+        "alternateName": ["Liceu", "Comunidade Liceu"],
+        "url": "https://comunidadecristaliceu.vercel.app/"
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" href="../images/logos/logo-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
@@ -29,16 +41,30 @@
     <main class="page-content fill-screen">
         <section class="content pages-section">
             <h2>Aulas Online</h2>
+
             <div class="contato-cards">
-                <div class="contato-card-aulas-online">
+                <!-- Banner do Canal -->
+                <div class="contato-card-aulas-online channel-banner">
                     <p>Siga as aulas pelo nosso canal do Youtube:</p>
                     <a href="https://www.youtube.com/@cliceubrasil" target="_blank" aria-label="YouTube">
-                        <svg class="icon-svg" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
+                        <svg class="youtube-brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="" d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1z" />
+                            <path fill="#FFFFFF" d="M264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
                         </svg>
                     </a>
+                </div>
+
+                <!-- Bloco: Cultos e Lives -->
+                <div class="contato-card-aulas-online video-block">
+                    <h3 class="video-block-title">Cultos</h3>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/videoseries?list=PLSZBY1wfuGLhpGgjGvIJJHtYQIQ9QIymD" 
+                            title="Playlist - Cultos e Lives" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </section>
