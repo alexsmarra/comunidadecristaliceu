@@ -172,3 +172,29 @@ main.fill-screen .page-content {
     height: 100%;
     border: 0;
 }
+
+/* ==========================================================================
+   Página: Horários
+   ========================================================================== */
+.atividades-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem; /* Espaçamento entre a foto e o conteúdo abaixo */
+}
+
+/* Corrigido o seletor (removido o 'img' do meio) */
+.atividades-banner .banner-img {
+    width: 25%;
+    max-width: 250px;
+    min-width: 160px; /* Evita que fique pequeno demais no celular */
+    height: auto;
+    background: transparent !important;
+    border-radius: 8px;
+    object-fit: cover;
+    
+    /* Troca do box-shadow pelo drop-shadow para não criar fundo na área transparente */
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
