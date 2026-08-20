@@ -101,7 +101,7 @@ main.fill-screen .page-content {
     box-sizing: border-box;
 }
 
-/* Centralização vertical perfeita no banner do canal */
+/* Centralização vertical no banner do canal */
 .contato-card-aulas-online.channel-banner {
     display: flex;
     align-items: center;
@@ -117,12 +117,19 @@ main.fill-screen .page-content {
     align-items: center;
 }
 
-/* Ícone do YouTube com cores originais presas */
+/* Ícone do YouTube com efeito HOVER igual ao das outras páginas */
 .youtube-brand-icon {
     width: 40px;
     height: 40px;
     display: block;
-    fill: initial !important; /* Impede a herança do CSS global */
+    fill: initial !important;
+    transition: filter 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.contato-card-aulas-online.channel-banner a:hover .youtube-brand-icon {
+    filter: brightness(1.2);
+    transform: scale(1.15);
 }
 
 /* Padronização do bloco de vídeo */
