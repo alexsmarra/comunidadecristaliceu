@@ -147,6 +147,8 @@
 
     .footer-logo {
         margin-bottom: 3rem;
+        max-width: 200px;
+        margin-right: 100px;
     }
 
     .contact-column,

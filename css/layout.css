@@ -23,7 +23,7 @@ main.fill-screen .page-content {
 .pages-section .contato-cards {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     text-align: center;
     gap: 1rem;
 }
@@ -53,13 +53,14 @@ main.fill-screen .page-content {
     margin: 3rem auto 1rem;
     padding: 0 1rem;
     text-align: center;
-    box-sizing: border-box; /* garante que padding não aumente a largura total */
+    box-sizing: border-box;
+    /* garante que padding não aumente a largura total */
 }
 
 .pages-section {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -81,7 +82,7 @@ main.fill-screen .page-content {
 
 .content li {
     margin-bottom: 0.5rem;
-    text-align: left;   
+    text-align: left;
 }
 
 /* ==========================================================================
@@ -151,12 +152,14 @@ main.fill-screen .page-content {
 
 .video-block p {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Container responsivo 16:9 para o iframe */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
+    padding-bottom: 56.25%;
+    /* Proporção 16:9 */
     height: 0;
     overflow: hidden;
     width: 100%;
@@ -173,28 +176,108 @@ main.fill-screen .page-content {
     border: 0;
 }
 
+/* Ajustes Responsivos para Telas Grandes (> 1023px) */
+@media (min-width: 1023px) {
+
+    /* Expande a largura do container principal da página */
+    .pages-section:has(.video-block),
+    .content:has(.video-block) {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    /* Alinhamento e agrupamento centralizado no banner do canal */
+    .contato-card-aulas-online.channel-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Mudado de space-between para center */
+        gap: 1rem;
+        /* Controla a distância EXATA entre o texto e o ícone */
+        width: 100%;
+    }
+
+    .contato-card-aulas-online.channel-banner p {
+        width: fit-content;
+        flex-shrink: 0;
+        /* Impede que o texto seja espremido */
+    }
+
+    /* 2. Centraliza o texto descritivo e o bloco de vídeo */
+    .video-block {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* Centraliza o container na página */
+        align-items: center;
+        /* Alinha o texto e o player ao centro */
+        margin-bottom: 3rem;
+    }
+
+    /* Centraliza a frase/parágrafo da segunda div */
+    .video-block p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Aumenta o tamanho do título para acompanhar a nova escala */
+    .video-block .video-block-title {
+        font-size: 1.8rem;
+    }
+}
+
 /* ==========================================================================
-   Página: Horários
+   Páginas com Banners Recortados (Horários / Sobre)
    ========================================================================== */
-.atividades-banner {
+.atividades-banner,
+.sobre-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 2rem; /* Espaçamento entre a foto e o conteúdo abaixo */
+    margin-bottom: 2rem;
+    /* Espaçamento entre a foto e o texto */
 }
 
-/* Corrigido o seletor (removido o 'img' do meio) */
-.atividades-banner .banner-img {
+/* Aplicação de dimensões e filtro de sombra para PNG transparente */
+.atividades-banner .banner-img,
+.sobre-banner .banner-img {
     width: 25%;
     max-width: 250px;
-    min-width: 160px; /* Evita que fique pequeno demais no celular */
+    min-width: 160px;
+    /* Evita que fique pequeno demais no celular */
     height: auto;
     background: transparent !important;
     border-radius: 8px;
     object-fit: cover;
-    
-    /* Troca do box-shadow pelo drop-shadow para não criar fundo na área transparente */
+
+    /* Sombra contornada sem criar caixa retangular de fundo */
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
 }
 
+/* Container que abriga a imagem na página Sobre */
+.sobre-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Imagem ocupando 100% da largura da section */
+.sobre-banner .banner-img {
+    width: 100%;
+    /* Preenche 100% da largura do section */
+    max-width: 100%;
+    /* Remove a trava de largura máxima */
+    min-width: 0;
+    /* Permite encolher adequadamente no celular */
+    height: auto;
+    background: transparent !important;
+    border-radius: 8px;
+    object-fit: cover;
+
+    /* Mantém o filtro de sombra no contorno do PNG */
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
